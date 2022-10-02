@@ -1,0 +1,52 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    char tipe; double r; double t; double l;
+    
+    cout << "Menghitung Volume Bangun 3D" << endl ; 
+    cout << "Pilih Bangun Ruang yang ingin dihitung" << endl;
+    cout << "(a) Bola\n(b) Kerucut \n(c) Silinder \n(d) Kubus \n(e) Balok" << endl;
+    cout << "pilih : ";
+    cin >> tipe;
+    cout << "-----------------------------------------------------------\n";
+    
+    switch(tipe) {
+      case 'a' :
+         cout << "Panjang jari-jari: "; 
+         cin >> r;
+         cout << "Volume Bola : " << r*r*r*4/3*3.14;
+         break;
+      case 'b' :
+         cout << "Panjang jari-jari: "; 
+         cin >> r;
+         cout << "Tinggi Kerucut: "; 
+         cin >> t;
+         cout << "Volume Kerucut : " << r*r*4/3*3.14*1/3;
+         break;
+      case 'c' :
+         cout << "Panjang jari-jari: "; 
+         cin >> r;
+         cout << "Tinggi Silinder: "; 
+         cin >> t;
+         cout << "Volume Silinder : " << r*r*3.14*t;
+         break;
+      case 'd' :
+         cout << "Panjang Rusuk: "; 
+         cin >> r;
+         cout << "Volume Kubus : " << r*r*r;
+         break;
+     case 'e' :
+         cout << "Panjang : "; 
+         cin >> r;
+         cout << "Lebar : "; 
+         cin >> l;
+         cout << "Tinggi : "; 
+         cin >> t;
+         cout << "Volume Balok : " << r*t*l;
+         break;
+   }
+    
+
+    return 0;
+}
